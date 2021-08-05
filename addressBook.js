@@ -1,4 +1,4 @@
-//UC2
+//UC3
 class Contact {
   
 
@@ -80,12 +80,20 @@ class Contact {
 
   toString() {
     return "\nContact[\nFirstName = "+ this.firstName +"\nLastName = "+this.lastName+"\nAddress = "+this.address+"\nCity ="+this.city+
-       "\nState = "+this.state+"\nZip= "+this.zip+"\nPhoneNumber="+this.phoneNumber+"\nEmail="+this.email+"\n]";
+       "\nState = "+this.state+"\nZip = "+this.zip+"\nPhoneNumber="+this.phoneNumber+"\nEmail = "+this.email+"\n]";
   }
 }
 
+let addressbook = new Array();
+
 let contact=new Contact("Sanket","Lalge","Borevali",'Mumbai','MH','125412',"99 7854123233",'san@gmail.com');
-console.log(contact.toString())
+addressbook.push(contact.toString())
+
+let contact1=new Contact("Jon","Abc","Bab",'Nagpur','MH','441904',"91 7857723233",'jon@gmail.com');
+addressbook.push(contact1.toString())
+
+console.log("Addressbook : "+addressbook)
+
 
 
 
