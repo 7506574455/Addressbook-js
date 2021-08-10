@@ -1,4 +1,4 @@
-//UC6
+//UC7
 class Contact {
     /*
       firstName;
@@ -250,3 +250,10 @@ class Contact {
         console.log("Contact already Exists!");
   
       console.log("Array: ",addressbook);
+  
+      //UC-8 To Find for the Person in the Address Book 
+      let findByCity = addressbook.filter((e) => e._city == 'Nagpur');
+      console.log("Contacts by city: ",findByCity);
+    
+      let findByState = addressbook.filter((e) => e._state == 'MH');
+      console.log("Contacts by state: ",findByState);
